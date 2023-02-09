@@ -1,0 +1,33 @@
+<!-- JavaScript supports three important types of dialog boxes. These dialog boxes can be used to
+ raise and alert, or to get confirmation on any input or to have a kind of input from the users.
+  Here we will discuss each dialog box one by one.
+
+Alert Dialog Box
+An alert dialog box is mostly used to give a warning message to the users. For example, if one 
+input field requires to enter some text but the user does not provide any input, then as a part 
+of validation, you can use an alert box to give a warning message.
+
+Nonetheless, an alert box can still be used for friendlier messages. Alert box gives only one button
+ "OK" to select and proceed. -->
+
+
+<html>
+    <head>
+        <script>
+            function db(){
+                var ale = confirm("Do u want to continue");
+                if(ale==true){
+                    document.write("user want to continue.....");
+                }else{
+                    document.write("User does not wnat to continue....");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the btn.......</p>
+        <form action="">
+            <input type="button" onclick="db()" value="Click Me">
+        </form>
+    </body>
+</html>
